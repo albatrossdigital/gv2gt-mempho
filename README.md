@@ -12,7 +12,8 @@
 ### Setup
 ```
 aws configure
-ln -s pre-push .git/hooks/pre-push
+cd .git/hooks/pre-push
+ln -s ../../pre-push pre-push
 ```
 
 ## mbed code
