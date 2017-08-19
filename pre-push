@@ -19,13 +19,12 @@ do
     current_branch=$(git rev-parse --abbrev-ref HEAD)
     echo "Current branch is $current_branch"
 
-
     if [ "master" == "$current_branch" ]; then
         S3_BUCKET=mempho.gv2gt.com
 
         echo
         echo "Pushing to s3"
-        aws s3 sync ./dist s3://$S3_BUCKET/ --acl public-read --delete
+        aws s3 sync . s3://$S3_BUCKET/ --acl public-read --delete
 
         #echo
         #echo "Clearing CloudFront cache"
