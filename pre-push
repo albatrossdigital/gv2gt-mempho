@@ -1,0 +1,51 @@
+#!/bin/bash
+#
+# Purge the CloudFlare cache after pushing an update to GitHub Pages
+#
+# To use, rename this file to "post-receive" and drop it into the `.git/hooks/` directory in your project's root.
+# Change the $branch value based on the type of page you're deploying.
+# Use "master" for Organization Pages, and "gh-pages" for Project Pages.
+#
+# To install
+# sudo apt-get install s3cmd
+# s3cmd --configure   # settings in PassPack
+# aws configure
+#
+# Find your CloudFlare API token here: https://www.cloudflare.com/a/account/my-account
+# From https://gist.github.com/jonlong/240eb9a7501f1ae4c09f
+
+while read local_ref local_sha remote_ref remote_sha
+do
+    current_branch=$(git rev-parse --abbrev-ref HEAD)
+    echo "Current branch is $current_branch"
+
+
+
+    if [ "master" == "$current_branch" ]; then
+        S3_BUCKET=mempho.gv2gt.com
+
+        echo
+        echo "Pushing to s3"
+        aws s3 sync ./dist s3://$S3_BUCKET/ --acl public-read --delete
+
+        #echo
+        #echo "Clearing CloudFront cache"
+        #aws cloudfront create-invalidation --distribution-id=EIXH29Q28LXYA --paths /embed.js /index.html
+
+        #echo
+        #echo "Clearing CloudFlare cache"
+        #curl https://www.cloudflare.com/api_json.html \
+        #  -d 'a=fpurge_ts' \
+        #  -d 'tkn=' \
+        #  -d 'email=david.trovato@gv2gt.com' \
+        #  -d 'z=gv2gt.com' \
+        #  -d 'v=1' &
+        #echo
+        #echo
+
+        exit 0
+    fi
+
+
+
+done
