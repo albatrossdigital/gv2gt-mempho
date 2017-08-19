@@ -20,7 +20,6 @@ do
     echo "Current branch is $current_branch"
 
 
-
     if [ "master" == "$current_branch" ]; then
         S3_BUCKET=mempho.gv2gt.com
 
