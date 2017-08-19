@@ -1,6 +1,5 @@
 # gv2gt-mempho
 
-
 > vue.js Gv2gt Client Application
 
 * Branch: master
