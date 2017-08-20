@@ -16,7 +16,7 @@ cd .git/hooks/pre-push
 ln -s ../../pre-push pre-push
 ```
 
-## mbed code
+## Embed code
 
 ```
 <script>
