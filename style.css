@@ -1,0 +1,160 @@
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;}
+}
+
+/* from memphofest.com */
+@font-face {
+  font-family: 'Forty-six';
+  src: url("/fonts/Forty-six.ttf.woff") format("woff"), url("/fonts/Forty-six.ttf.svg#Forty-six") format("svg"), url("/fonts/Forty-six.ttf.eot"), url("/fonts/Forty-six.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "TypoGraphica";
+  src: url("fonts/TypoGraphica.eot?") format("eot"), url("fonts/TypoGraphica.woff") format("truetype"), url("fonts/TypoGraphica.svg#TypoGraphica") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* from https://mempho.frontgatetickets.com/ */
+body {
+  background: #0f3a29 url(img/bgimage.jpg) no-repeat top left;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* overrides */
+.container {
+  background-color: white;
+}
+
+.projects-view {
+  min-height: 600px
+}
+
+.header {
+  text-align: center;
+}
+
+.user-menu {
+  float: none !important;
+}
+
+.engage-wrap {
+  margin-top: 1em;
+}
+
+.modal-dialog {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content {
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+}
+
+/*.header-image {
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+#wrapper > * {
+  background-color: white;
+}
+
+#wrapper > *:first-child {
+  padding-bottom: 5px;
+}
+
+#wrapper > *:last-child {
+  padding-bottom: 40px;
+}*/
+
+/* overrides from memphofest.com */
+.btn,
+.user-menu li a,
+.nog-block-cover-link {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
+  padding: 0.85em 1em;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #813366;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-family: "TypoGraphica",sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.user-menu li {
+  width: 48.5%;
+}
+.user-menu li a {
+  width: 100%;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.form-control{
+  height: 50px;
+}
+
+.btn:hover,
+.user-menu li a:hover,
+.nog-block-cover-link:hover,
+.btn:focus,
+.user-menu li a:focus,
+.nog-block-cover-link:focus,
+.user-menu li a.router-link-active{
+  background-color: #63224c !important;
+  color: white;
+}
+
+.or-sep-text,
+h2{
+  font-family: "TypoGraphica",sans-serif;
+  text-transform: uppercase;
+}
+
+.or-sep .or-sep-text {
+  font-size: 16px;
+}
+
+a.social-network-button {
+  font-family: inherit;
+  text-transform: none;
+}
+
+/*
+.organization-wrap h4:before {
+  content: "Hello";
+  visibility: visible;
+}
+.organization-wrap h4 {
+  visibility: hidden;
+}
+*/
+
