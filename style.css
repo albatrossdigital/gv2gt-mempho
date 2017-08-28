@@ -31,7 +31,9 @@ body {
   background-size: cover;
 }
 
-/* overrides */
+
+
+/* app overrides */
 .container {
   background-color: white;
 }
@@ -63,27 +65,92 @@ body {
   box-shadow: none;
   border-radius: 0;
   border: none;
-}
-
-/*.header-image {
   height: auto;
-  margin: 0 auto;
-  max-width: 100%;
+  min-height: 100%;
 }
 
-#wrapper > * {
-  background-color: white;
+/* Taken from StateFarm modals*/
+.modal-body {
+  padding: 0;
+}
+.modal-content {
+  background-color: #e6e6e6;
 }
 
-#wrapper > *:first-child {
-  padding-bottom: 5px;
+.modal-body .close {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+#route-modal .page-title {
+  font-size: 65px;
+  background-color: #fff;
+  color: #313131;
+  padding: 60px;
+  font-weight: 700;
+  margin: 0;
+}
+#route-modal .project-teaser-view,
+#route-modal .project-desc-wrap {
+  padding: 60px 60px 40px;
+}
+#route-modal .col-sm-6 {
+  padding: 0;
 }
 
-#wrapper > *:last-child {
-  padding-bottom: 40px;
-}*/
+
+
+
+
+  /*.header-image {
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  #wrapper > * {
+    background-color: white;
+  }
+
+  #wrapper > *:first-child {
+    padding-bottom: 5px;
+  }
+
+  #wrapper > *:last-child {
+    padding-bottom: 40px;
+  }*/
+
+
+/* overrides specifically for memphofest.com */
+
+
+
 
 /* overrides from memphofest.com */
+body {
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #252525;
+}
+
+.form-control {
+  font-size: 20px;
+}
+
+.or-sep-text,
+h2,
+h3,
+h4{
+  font-family: "Forty-six",sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h4.dashboard-projects-header {
+  font-size: 36px;
+  color: #813366;
+}
+
 .btn,
 .user-menu li a,
 .nog-block-cover-link {
@@ -108,7 +175,10 @@ body {
 }
 
 .user-menu li {
-  width: 48.5%;
+  width: 49.5%;
+}
+.user-menu.loggedin li {
+  width: 33%;
 }
 .user-menu li a {
   width: 100%;
@@ -133,20 +203,25 @@ body {
   color: white;
 }
 
-.or-sep-text,
-h2{
-  font-family: "TypoGraphica",sans-serif;
-  text-transform: uppercase;
-}
-
-.or-sep .or-sep-text {
+.view .or-sep .or-sep-text {
   font-size: 16px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+  top: -20px;
+  background-color: #63224c;
 }
 
 a.social-network-button {
   font-family: inherit;
   text-transform: none;
 }
+
+.project-view-header>div {
+  margin-bottom: .5em;
+}
+
 
 /*
 .organization-wrap h4:before {
