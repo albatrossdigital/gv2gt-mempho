@@ -22,7 +22,7 @@
 
 /* from https://mempho.frontgatetickets.com/ */
 body {
-  background: #0f3a29 url(img/bgimage.jpg) no-repeat top left;
+  background: url(img/bgimage.jpg) no-repeat top left;
   background-position: center center;
   background-attachment: fixed;
   -webkit-background-size: cover;
