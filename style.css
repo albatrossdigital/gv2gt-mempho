@@ -10,7 +10,7 @@
 /* from memphofest.com */
 @font-face {
   font-family: 'Forty-six';
-  src: url("/fonts/Forty-six.ttf.woff") format("woff"), url("/fonts/Forty-six.ttf.svg#Forty-six") format("svg"), url("/fonts/Forty-six.ttf.eot"), url("/fonts/Forty-six.ttf.eot?#iefix") format("embedded-opentype");
+  src: url("fonts/Forty-six.ttf.woff") format("woff"), url("fonts/Forty-six.ttf.svg#Forty-six") format("svg"), url("fonts/Forty-six.ttf.eot"), url("fonts/Forty-six.ttf.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
 
@@ -34,8 +34,14 @@ body {
 
 
 /* app overrides */
+
+.list-inline.sharing {
+  /* @todo: something else here? */
+  display: none;
+}
+
 .container {
-  background-color: white;
+  background-color: #f5f5f5;
 }
 
 .projects-view {
@@ -133,15 +139,44 @@ body {
   color: #252525;
 }
 
+
+.project-list .project-teaser-view {
+  padding: 10px !important;
+}
+.project-list .project-teaser-view .project-view-header {
+  padding: 20px;
+  background-color: #fff;
+  min-height: 555px;
+}
+.project-list .project-teaser-view .project-view-header .project-badge {
+  max-width: 100%;
+  position: relative;
+}
+.project-list .project-teaser-view .project-view-header .project-badge:after {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 150px;
+  height: 65px;
+  content: "Powered by";
+  color: #999;
+  background: url(img/first-republic-logo.png) no-repeat;
+  background-position: bottom center;
+  background-size: 150px;
+}
+
 .form-control {
   font-size: 20px;
 }
 
 .or-sep-text,
-h2,
+h2{
+  font-family: "Forty-six",sans-serif;
+}
+
+
 h3,
 h4{
-  font-family: "Forty-six",sans-serif;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -149,6 +184,10 @@ h4{
 h4.dashboard-projects-header {
   font-size: 36px;
   color: #813366;
+}
+
+#route-modal .page-title {
+  font-size: 75px;
 }
 
 .btn,
@@ -223,13 +262,14 @@ a.social-network-button {
 }
 
 
-/*
+
+
+/* temp? */
 .organization-wrap h4:before {
-  content: "Hello";
+  content: "Non-Profit Partner";
   visibility: visible;
 }
 .organization-wrap h4 {
   visibility: hidden;
 }
-*/
 
