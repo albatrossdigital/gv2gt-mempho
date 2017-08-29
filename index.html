@@ -51,6 +51,34 @@
     </p>
   </div>
 
+  <!-- App Template Overrides -->
+  <script type="x-template" id="project-teaser-info-override">
+    <div>
+      <div class="clearfix project-info-wrap">
+        <div class="box-wrap desc-wrap" v-html="projectDescShort"></div>
+        <div v-if="projectOrg" class="box-wrap organization-wrap">
+          <h4>Non-Profit Partner</h4>
+          <p>{{projectOrg}}</p>
+        </div>
+      </div>
+      <div class="box-wrap location-wrap">
+        <h4>Where</h4>
+        <div v-if="project.meetingplace" class="meeting-place-wrap" v-html="project.meetingplace"></div>
+        <div v-if="project.locs && project.locs.length" class="meeting-address-wrap">
+          <div v-if="project.locs[0].streetAddress1" class="address-street">{{project.locs[0].streetAddress1}}</div>
+          <span v-if="project.locs[0].city" class="address-city">{{project.locs[0].city}}</span>
+          <span v-if="project.locs[0].region" class="address-state">{{project.locs[0].region}}</span>
+          <span v-if="project.locs[0].postalCode" class="address-zipcode">{{project.locs[0].postalCode}}</span>
+        </div>
+      </div>
+      <div class="box-wrap date-wrap">
+        <h4>When</h4>
+        <div v-if="projectDateTime.time" class="time-wrap">{{projectDateTime.time}}</div>
+        <div class="date-wrap">{{projectDateTime.date}}</div>
+      </div>
+    </div>
+  </script>
+
 
 </div>
 

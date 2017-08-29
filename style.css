@@ -261,15 +261,3 @@ a.social-network-button {
   margin-bottom: .5em;
 }
 
-
-
-
-/* temp? */
-.organization-wrap h4:before {
-  content: "Non-Profit Partner";
-  visibility: visible;
-}
-.organization-wrap h4 {
-  visibility: hidden;
-}
-
