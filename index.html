@@ -38,7 +38,7 @@
   <div class="app-wrapper">
     <div id="app"></div>
   </div>
-  <script src="https://dev.gv2gt.com/embed.js?0.5"></script>
+  <script src="https://dev.gv2gt.com/embed.js?0.6"></script>
   <!-- Give 2 Get embed -->
 
   <div class="container">
@@ -75,6 +75,19 @@
         <h4>When</h4>
         <div v-if="projectDateTime.time" class="time-wrap">{{projectDateTime.time}}</div>
         <div class="date-wrap">{{projectDateTime.date}}</div>
+      </div>
+    </div>
+  </script>
+
+  <script type="x-template" id="overlay-override">
+    <div id="route-modal" v-bind:style="style" v-bind:class="{ 'in': open }" class="route-modal modal fade container" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <overlay-close></overlay-close>
+            <router-view class="overlay-view"></router-view>
+          </div>
+        </div>
       </div>
     </div>
   </script>
