@@ -89,12 +89,12 @@ body {
   margin-right: 20px;
 }
 #route-modal .page-title {
-  font-size: 75px;
+  font-size: 45px;
   background-color: #fff;
   color: #313131;
-  padding: 60px;
+  padding: 30px;
   font-weight: 700;
-  margin: 0; 
+  margin: 0;
 }
 
 #route-modal h3.page-title {
@@ -105,33 +105,54 @@ body {
 #route-modal .project-teaser-view,
 #route-modal .project-desc-wrap,
 #route-modal .engage-view-buttons {
-  padding: 60px 60px 40px;
+  padding: 30px 30px 25px;
 }
 #route-modal .col-sm-6 {
   padding: 0;
 }
 
-
-
-
-
-  /*.header-image {
-    height: auto;
-    margin: 0 auto;
-    max-width: 100%;
+/* Big */
+@media screen and (min-width: 768px) {
+  #route-modal .page-title {
+    font-size: 75px;
+    padding: 60px;
   }
 
-  #wrapper > * {
-    background-color: white;
+  #route-modal h3.page-title {
+    font-size: 45px;
   }
 
-  #wrapper > *:first-child {
-    padding-bottom: 5px;
+  #route-modal .project-teaser-view,
+  #route-modal .project-desc-wrap,
+  #route-modal .engage-view-buttons {
+    padding: 60px 60px 40px;
   }
 
-  #wrapper > *:last-child {
-    padding-bottom: 40px;
-  }*/
+  #route-modal .col-sm-6 {
+    padding: 0;
+  }
+}
+
+
+
+
+/*.header-image {
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+#wrapper > * {
+  background-color: white;
+}
+
+#wrapper > *:first-child {
+  padding-bottom: 5px;
+}
+
+#wrapper > *:last-child {
+  padding-bottom: 40px;
+}*/
 
 
 /* overrides specifically for memphofest.com */
@@ -153,7 +174,6 @@ body {
 .project-list .project-teaser-view .project-view-header {
   padding: 20px;
   background-color: #fff;
-  min-height: 555px;
 }
 .project-list .project-teaser-view .project-view-header .project-badge {
   max-width: 100%;
@@ -163,13 +183,24 @@ body {
   position: absolute;
   top: -10px;
   right: 0;
-  width: 150px;
-  height: 65px;
+  width: 110px;
+  height: 58px;
   content: "Powered by";
   color: #999;
   background: url(img/first-republic-logo.png) no-repeat;
   background-position: bottom center;
-  background-size: 150px;
+  background-size: 110px;
+}
+
+/* Big */
+@media screen and (min-width: 768px) {
+  .project-list .project-teaser-view .project-view-header {
+    min-height: 555px;
+  }
+  .project-list .project-teaser-view .project-view-header .project-badge:after {
+    width: 150px;
+    height: 65px;
+  }
 }
 
 .form-control {
@@ -188,9 +219,20 @@ h4{
   font-weight: bold;
 }
 
+h3 a,
+h4 a {
+  color: #813366;
+}
+
+h3 a:hover,
+h4 a:hover {
+  color: #63224c;
+  text-decoration: none;
+}
+
 h4.dashboard-projects-header {
   font-size: 36px;
-  color: #813366;
+  color: #98cb55;
 }
 
 .btn,
@@ -216,14 +258,33 @@ h4.dashboard-projects-header {
   font-size: 20px;
 }
 
+
 .user-menu li {
   width: 49.5%;
 }
+
 .user-menu.loggedin li {
   width: 33%;
 }
+
 .user-menu li a {
   width: 100%;
+}
+
+/* Small */
+@media screen and (max-width: 767px) {
+  .user-menu {
+    margin-bottom: 1rem;
+  }
+
+  .user-menu li {
+    margin-left: 0!important;
+    width: 100%!important;
+  }
+
+  .user-menu li a {
+    margin-bottom: 2px;
+  }
 }
 
 .logo-container {
@@ -232,6 +293,18 @@ h4.dashboard-projects-header {
 
 .form-control{
   height: 50px;
+}
+
+a.status-interested,
+a.status-confirmed {
+  background-color: #98cb55;
+}
+
+a.status-interested:focus,
+a.status-confirmed:focus,
+a.status-interested:hover,
+a.status-confirmed:hover {
+  background-color: #7fb538!important;
 }
 
 .btn:hover,
@@ -244,6 +317,7 @@ h4.dashboard-projects-header {
   background-color: #63224c !important;
   color: white;
 }
+
 
 .view .or-sep .or-sep-text {
   font-size: 16px;
@@ -263,4 +337,3 @@ a.social-network-button {
 .project-view-header>div {
   margin-bottom: .5em;
 }
-
