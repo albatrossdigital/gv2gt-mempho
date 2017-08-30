@@ -89,15 +89,22 @@ body {
   margin-right: 20px;
 }
 #route-modal .page-title {
-  font-size: 65px;
+  font-size: 75px;
   background-color: #fff;
   color: #313131;
   padding: 60px;
   font-weight: 700;
-  margin: 0;
+  margin: 0; 
 }
+
+#route-modal h3.page-title {
+  font-family: "Forty-six",sans-serif;
+  font-size: 45px;
+}
+
 #route-modal .project-teaser-view,
-#route-modal .project-desc-wrap {
+#route-modal .project-desc-wrap,
+#route-modal .engage-view-buttons {
   padding: 60px 60px 40px;
 }
 #route-modal .col-sm-6 {
@@ -186,10 +193,6 @@ h4.dashboard-projects-header {
   color: #813366;
 }
 
-#route-modal .page-title {
-  font-size: 75px;
-}
-
 .btn,
 .user-menu li a,
 .nog-block-cover-link {
@@ -259,17 +262,5 @@ a.social-network-button {
 
 .project-view-header>div {
   margin-bottom: .5em;
-}
-
-
-
-
-/* temp? */
-.organization-wrap h4:before {
-  content: "Non-Profit Partner";
-  visibility: visible;
-}
-.organization-wrap h4 {
-  visibility: hidden;
 }
 
