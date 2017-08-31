@@ -187,9 +187,9 @@ body {
   height: 58px;
   content: "Powered by";
   color: #999;
-  background: url(img/first-republic-logo.png) no-repeat;
-  background-position: bottom center;
-  background-size: 110px;
+  background: url(img/first-republic-logo.svg) no-repeat;
+  background-position: bottom left;
+  background-size: 150px;
 }
 
 /* Big */
