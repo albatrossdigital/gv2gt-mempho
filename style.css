@@ -307,6 +307,20 @@ a.status-confirmed:hover {
   background-color: #7fb538!important;
 }
 
+.engage-wrap a.btn-info {
+  background-color: #6b8846 !important;
+}
+
+
+a.btn.btn-danger {
+  background-color: #B5000A!important;
+}
+
+a.btn.btn-danger:focus,
+a.btn.btn-danger:hover {
+  background-color: #890009!important;
+}
+
 .btn:hover,
 .user-menu li a:hover,
 .nog-block-cover-link:hover,
