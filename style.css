@@ -307,7 +307,9 @@ a.status-confirmed:hover {
   background-color: #7fb538!important;
 }
 
-.engage-wrap .btn-info {
+.engage-wrap .btn-info,
+.engage-wrap .btn-info:hover,
+.engage-wrap .btn-info:focus {
   background-color: #6b8846 !important;
 }
 
