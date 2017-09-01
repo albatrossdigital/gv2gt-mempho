@@ -79,6 +79,17 @@
     </div>
   </script>
 
+  <script type="x-template" id="project-heading-contact-override">
+    <div v-if="project.organizations && project.organizations.length" class="clearfix project-contact-wrap">
+      <h4 class="project-contact-header">Contact Information</h4>
+      <div class="project-contact">
+        <div class="organization-wrap">
+          <a href="mailto:volunteer@memphofest.com">volunteer@memphofest.com</a>
+        </div>
+      </div>
+    </div>
+  </script>
+
   <script type="x-template" id="overlay-override">
     <div id="route-modal" v-bind:style="style" v-bind:class="{ 'in': open }" class="route-modal modal fade container" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
@@ -97,7 +108,7 @@
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElements ByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-82284479-2', 'auto');
   ga('send', 'pageview');
