@@ -353,3 +353,11 @@ a.social-network-button {
 .project-view-header>div {
   margin-bottom: .5em;
 }
+
+
+/** temp? hide google/fb login */
+
+#row-2,
+#row-3 {
+  display: none;
+}
